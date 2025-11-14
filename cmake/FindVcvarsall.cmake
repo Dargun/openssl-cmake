@@ -51,7 +51,7 @@ function(set_vcvarsall_command COMMAND)
             endif()
         endif()
 
-        if("${CMAKE_SYSTEM_NAME}" STREQUAL "WindowsStore")
+        if(WINDOWS_STORE)
             set(VCVARSALL_PLATFORM_TYPE uwp)
         endif()
 
